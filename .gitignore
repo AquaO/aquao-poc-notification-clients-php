@@ -1,0 +1,45 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# CakePHP 3
+
+/vendor/*
+/config/app.php
+
+/tmp/cache/models/*
+!/tmp/cache/models/empty
+/tmp/cache/persistent/*
+!/tmp/cache/persistent/empty
+/tmp/cache/views/*
+!/tmp/cache/views/empty
+/tmp/sessions/*
+!/tmp/sessions/empty
+/tmp/tests/*
+!/tmp/tests/empty
+
+/logs/*
+!/logs/empty
+
+# CakePHP 2
+
+/app/tmp/*
+/app/Config/core.php
+/app/Config/database.php
+/vendors/*
+
+# misc
+.DS_Store
+.env.local
+.env.development
+.env.development.local
+.env.test.local
+.env.production.local
+
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
