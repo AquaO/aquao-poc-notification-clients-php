@@ -15,12 +15,27 @@ Edit .env file and replace %**% with the correct values
 
 ### Prerequisites
 
+See https://symfony.com/doc/6.4/setup.html
 
 ### Install
+
+`composer install`
 
 
 ## Start
 
+`symfony server:start`
+
+## Endpoints
+
+Once the server is up, you can access the following endpoints on `localhost:8000`
+
+Client created : `/aquao/notifications/client/created`  
+Client updated : `/aquao/notifications/client/updated`  
+Client deleted : `/aquao/notif cations/Client/deleted`     
+Client anonymized : `/aquao/notifications/client/anonymized`
+
+See postman collection for more details.
 
 ## Authors
 

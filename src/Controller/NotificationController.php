@@ -18,25 +18,25 @@ class NotificationController extends AbstractController
     ) {
     }
 
-    #[Route('client/created', name: 'notification_client_created')]
+    #[Route('client/created', name: 'notification_client_created', methods: ['POST'])]
     public function created(Request $request): Response
     {
         return $this->onClientNotification($request, 'CREATED');
     }
 
-    #[Route('client/updated', name: 'notification_client_updated')]
+    #[Route('client/updated', name: 'notification_client_updated', methods: ['POST'])]
     public function updated(Request $request): Response
     {
         return $this->onClientNotification($request, 'UPDATED');
     }
 
-    #[Route('client/deleted', name: 'notification_client_deleted')]
+    #[Route('client/deleted', name: 'notification_client_deleted', methods: ['POST'])]
     public function deleted(Request $request): Response
     {
         return $this->onClientNotification($request, 'DELETED');
     }
 
-    #[Route('client/anonymized', name: 'notification_client_anonymized')]
+    #[Route('client/anonymized', name: 'notification_client_anonymized', methods: ['POST'])]
     public function anonymized(Request $request): Response
     {
         return $this->onClientNotification($request, 'ANONYMIZED');
