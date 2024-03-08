@@ -9,9 +9,7 @@ This a Php/Synfpny Proof Of Concept to demonstrate how to handle AquaO notificat
 
 Edit .env file and replace %**% with the correct values
 
-* %AQUAO_ENDPOINT%
-* %TENANT_ID%
-* %CLIENT_ID%
+* %NOTIFICATION_SECRET%
 
 ### Prerequisites
 
