@@ -35,6 +35,7 @@
 .env.production.local
 
 ###> symfony/framework-bundle ###
+/.env.dev
 /.env.local
 /.env.local.php
 /.env.*.local
